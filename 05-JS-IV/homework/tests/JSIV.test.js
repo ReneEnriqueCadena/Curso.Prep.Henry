@@ -28,7 +28,8 @@ describe('crearGato(nombre, edad)', function() {
   });
 });
 
-describe('agregarPropiedad(object, property)', function() {
+
+xdescribe('agregarPropiedad(object, property)', function() {
   it('should add the property to the object with a value of null', function() {
     const object = {
       x: 1,
@@ -43,7 +44,7 @@ describe('agregarPropiedad(object, property)', function() {
   });
 });
 
-describe('invocarMetodo(object, method)', function() {
+xdescribe('invocarMetodo(object, method)', function() {
   it('should invoke the method on the object', function() {
     const object = {
       x: 0,
@@ -211,7 +212,7 @@ describe('sumarLikesDeUsuario(user)', function() {
   });
 });
 
-describe('agregarMetodoCalculoDescuento(storeItem)', function() {
+xdescribe('agregarMetodoCalculoDescuento(storeItem)', function() {
   const storeItem = {
     precio: 80,
     porcentajeDeDescuento: 0.1,
