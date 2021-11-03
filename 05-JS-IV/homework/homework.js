@@ -30,10 +30,7 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-  objeto[metodo]()
-  // objeto.metodo()
-  // var ads = objeto[metodo]
-  // ads()
+ objeto[metodo]()
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
@@ -154,18 +151,16 @@ function agregarMetodoCalculoDescuento(produc) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-  
-  function name(produc) {
-    
-  }
-
-
   // return producto.precio - (producto.precio * producto.porcentajeDeDescuento)
 
-  producto['calcularPrecioDescuento'] = (p1) => {
-  }
 
+  produc.calcularPrecioDescuento = function () {
+    return this.precio - (this.porcentajeDeDescuento * this.precio)
+  }
+  return produc
 }
+
+
 
 
 // No modificar nada debajo de esta línea
